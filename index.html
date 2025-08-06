@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the button 478296900 times</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .a{
+            background-color: red;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .b{
+            background-color: orange;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .c{
+            background-color: yellow;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .d{
+            background-color: lime;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .e{
+            background-color: cyan;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .l0{
+            background-color: black;
+            display: inline-block;
+            width: 2000px;
+            color: white;
+            height: 50px;
+            font-size: 30px;
+        }
+        .f{
+            background-color: blue;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .g{
+            background-color: blueviolet;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .h{
+            background-color: magenta;
+            display: inline-block;
+            width: 2000px;
+            height: 50px;
+            font-size: 30px;
+        }
+        .ks{
+            font-size: 50px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="h">10{8}</div>
+    <div class="g">10{7}</div>
+    <div class="f">10{6}</div>
+    <div class="e">10{5}</div>
+    <div class="d">10^^^^</div>
+    <div class="c">10^^^</div>
+    <div class="b">10^^</div>
+    <div class="a">10^</div>
+    <div class="l0">0</div>
+    <button class="ks" onclick="zl()">Click me to add 1</button>
+    <div class="counter" style="font-size: 50px;">You clicked: 
+        <span id="counter" style="font-size: 50px;">0</span><div style="display: inline;font-size: 50px;">/478296900 times</div>
+        <h1>THIS GAME HAS NO SAVE,REFRESHING MEANS RESTART</h1>
+    </div>
+
+    <script>
+        let num = 0;
+        
+        function zl() {
+            // 增加总点击次数
+            num++;
+            document.getElementById("counter").innerText = num;
+            // 检查是否达到100次
+            if(num >= 478296900) {
+                // 删除所有内容
+                document.body.innerHTML = '';
+                // 创建通关消息
+                const congrats = document.createElement('h1');
+                congrats.textContent = 'Congratulations! Myqq:2665247976';
+                congrats.style.fontSize = '100px';
+                congrats.style.textAlign = 'center';
+                congrats.style.marginTop = '200px';
+                congrats.style.color = 'red';
+                document.body.appendChild(congrats);
+                return; // 停止执行后续代码
+            }
+            
+            const l0Element = document.querySelector('.l0');
+            const aElement = document.querySelector('.a');
+            const bElement = document.querySelector('.b');
+            const cElement = document.querySelector('.c');
+            const dElement = document.querySelector('.d');
+            const eElement = document.querySelector('.e');
+            const fElement = document.querySelector('.f');
+            const gElement = document.querySelector('.g');
+            const hElement = document.querySelector('.h');
+            let currentNumber = parseInt(l0Element.textContent);
+            currentNumber += 1;
+            if(currentNumber >= 10) {
+                aElement.textContent += "10^";
+                l0Element.textContent = "0";
+                const aContent = aElement.textContent;
+                const caretCount = aContent.length / 3; 
+                const bContent = bElement.textContent;
+                const catCount = bContent.length / 4;
+                const cContent = cElement.textContent; 
+                const datCount = cContent.length / 5;
+                const dContent = dElement.textContent; 
+                const eatCount = dContent.length / 6;
+                const eContent = eElement.textContent; 
+                const fatCount = eContent.length / 5;
+                const fContent = fElement.textContent; 
+                const gatCount = fContent.length / 5;
+                const gContent = gElement.textContent; 
+                const hatCount = gContent.length / 5;
+                const hContent = hElement.textContent; 
+                const iatCount = hContent.length / 5;
+                if(caretCount >= 10) {
+                    bElement.textContent += "10^^";
+                    aElement.textContent = "10^";
+                }
+                if(catCount >= 10) {
+                    cElement.textContent += "10^^^";
+                    bElement.textContent = "10^^";
+                }
+                if(datCount >= 10) {
+                    dElement.textContent += "10^^^^";
+                    cElement.textContent = "10^^^";
+                }
+                if(eatCount >= 10) {
+                    eElement.textContent += "10{5}";
+                    dElement.textContent = "10^^^^";
+                }
+                if(fatCount >= 10) {
+                    fElement.textContent += "10{6}";
+                    eElement.textContent = "10{5}";
+                }
+                if(gatCount >= 10) {
+                    gElement.textContent += "10{7}";
+                    fElement.textContent = "10{6}";
+                }
+                if(hatCount >= 10) {
+                    hElement.textContent += "10{8}";
+                    gElement.textContent = "10{7}";
+                }
+            } else {
+                l0Element.textContent = currentNumber.toString();
+            }
+        }
+    </script>
+</body>
+</html>
